@@ -11,4 +11,7 @@ html {
 body {
   background: #08111f;
   color: white;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }

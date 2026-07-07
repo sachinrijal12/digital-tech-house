@@ -1,6 +1,11 @@
 import "./Footer.css";
 import { useEffect, useState } from "react";
-import { FaFacebookF, FaLinkedinIn, FaGithub, FaArrowUp } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaArrowUp,
+} from "react-icons/fa";
 import Logo from "./Logo";
 
 function Footer() {
@@ -56,7 +61,7 @@ function Footer() {
 
           <div className="icons">
             <a
-              href="https://facebook.com/your-page"
+              href="https://www.facebook.com/profile.php?id=100020779023331"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -64,19 +69,19 @@ function Footer() {
             </a>
 
             <a
-              href="https://linkedin.com/company/digital-tech-house"
+              href="https://www.instagram.com/sachinrijal10"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/sachin-rijal-b35164354"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLinkedinIn />
-            </a>
-
-            <a
-              href="https://github.com/sachinrijal12"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
             </a>
           </div>
         </div>

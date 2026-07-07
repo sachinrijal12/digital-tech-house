@@ -30,11 +30,29 @@ function Navbar() {
       <div className="container nav-container">
         <Logo />
 
-        <div className="menu-icon" onClick={toggleMenu}>
+        <button
+          type="button"
+          className="menu-icon"
+          onClick={toggleMenu}
+          aria-label={
+            menuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
+          aria-expanded={menuOpen}
+          aria-controls="mobile-nav-links"
+        >
           {menuOpen ? <FaTimes /> : <FaBars />}
-        </div>
+        </button>
 
-        <ul className={menuOpen ? "nav-links active" : "nav-links"}>
+        <div
+          className={menuOpen ? "nav-overlay active" : "nav-overlay"}
+          onClick={closeMenu}
+          aria-hidden="true"
+        />
+
+        <ul
+          id="mobile-nav-links"
+          className={menuOpen ? "nav-links active" : "nav-links"}
+        >
           <li>
             <a
               href="#home"
