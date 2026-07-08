@@ -36,11 +36,14 @@
   color: #d6d6d6;
   text-decoration: none;
   margin-bottom: 0.75rem;
-  transition: 0.3s;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .footer-links a:hover {
   color: #fafafa;
+  transform: translateX(3px);
 }
 
 .icons {
@@ -52,18 +55,24 @@
 .icons a {
   width: 44px;
   height: 44px;
-  background: #111111;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-decoration: none;
-  transition: 0.3s;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+  backdrop-filter: blur(12px);
 }
 
 .icons a:hover {
   background: #fafafa;
   color: #020202;
+  transform: translateY(-2px);
 }
 
 hr {
@@ -85,7 +94,7 @@ hr {
   height: 55px;
   border: none;
   border-radius: 0;
-  background: #fafafa;
+  background: linear-gradient(135deg, #fafafa 0%, #d9d9d9 100%);
   color: #020202;
   font-size: 20px;
   cursor: pointer;
@@ -96,7 +105,9 @@ hr {
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
-  transition: 0.3s;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
   z-index: 999;
 }
 
@@ -107,7 +118,7 @@ hr {
 }
 
 .top-btn:hover {
-  background: #e8e8e8;
+  background: #ffffff;
   transform: translateY(-5px);
 }
 

@@ -1,16 +1,16 @@
 :root {
   color-scheme: dark;
-  --bg: #010101;
-  --surface: rgba(255, 255, 255, 0.06);
-  --surface-strong: rgba(255, 255, 255, 0.12);
-  --text: #fafafa;
-  --muted: #a4a4a4;
+  --bg: #020202;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-strong: rgba(255, 255, 255, 0.1);
+  --text: #f5f5f5;
+  --muted: #a6a6a6;
   --accent: #fafafa;
-  --accent-strong: #e8e8e8;
+  --accent-strong: #ffffff;
   --accent-soft: rgba(250, 250, 250, 0.12);
-  --gradient: #fafafa;
+  --gradient: linear-gradient(135deg, #fafafa 0%, #d9d9d9 100%);
   --border: rgba(255, 255, 255, 0.14);
-  --shadow: 0 22px 55px rgba(0, 0, 0, 0.28);
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -21,15 +21,24 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
   font-family: "Inter", "Poppins", sans-serif;
-  background: #020202;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 255, 255, 0.04),
+      transparent 30%
+    ),
+    var(--bg);
   color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -50,12 +59,34 @@ button {
   min-height: 44px;
 }
 
+::selection {
+  background: rgba(250, 250, 250, 0.22);
+  color: #ffffff;
+}
+
 .App {
   overflow-x: hidden;
 }
 
 section {
+  position: relative;
+  isolation: isolate;
   padding: clamp(4rem, 8vw, 6.5rem) clamp(1rem, 4vw, 2rem);
+  scroll-margin-top: 5.5rem;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.016) 0%,
+    transparent 40%,
+    rgba(255, 255, 255, 0.024) 100%
+  );
+  pointer-events: none;
+  z-index: -1;
 }
 
 .container {
@@ -81,7 +112,7 @@ section {
   width: 5rem;
   height: 4px;
   margin-top: 0.9rem;
-  background: #fafafa;
+  background: var(--gradient);
 }
 
 .subtitle,
@@ -101,7 +132,7 @@ section {
   gap: 10px;
   padding: clamp(0.9rem, 1.4vw, 1rem) clamp(1.4rem, 2vw, 2rem);
   border-radius: 0;
-  background: #fafafa;
+  background: var(--accent);
   color: #020202;
   text-decoration: none;
   font-weight: 600;
@@ -116,7 +147,7 @@ section {
 
 .btn:hover,
 .btn:focus-visible {
-  background: #ffffff;
+  background: var(--accent-strong);
   transform: translateY(-2px);
   box-shadow: 0 20px 40px rgba(255, 255, 255, 0.12);
 }
@@ -126,7 +157,7 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid rgba(250, 250, 250, 0.75);
+  outline: 2px solid rgba(250, 250, 250, 0.8);
   outline-offset: 3px;
 }
 
@@ -149,4 +180,17 @@ textarea:focus-visible {
   border-radius: 0;
   padding: clamp(1.25rem, 2vw, 1.8rem);
   box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

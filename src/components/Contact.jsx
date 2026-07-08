@@ -13,6 +13,11 @@ function Contact() {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
 
+  const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+  const isConfigured = Boolean(serviceId && templateId && publicKey);
+
   const handleChange = (e) => {
     setForm({
       ...form,
@@ -23,20 +28,27 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (!isConfigured) {
+      setStatus(
+        "⚠️ The contact form is temporarily unavailable. Please try again later.",
+      );
+      return;
+    }
+
     setLoading(true);
     setStatus("");
 
     emailjs
       .send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        serviceId,
+        templateId,
         {
           name: form.name,
           email: form.email,
           subject: form.subject,
           message: form.message,
         },
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+        publicKey,
       )
       .then(() => {
         setStatus("✅ Message sent successfully!");
@@ -66,7 +78,11 @@ function Contact() {
         </p>
 
         <form className="contact-form" onSubmit={sendEmail}>
+          <label htmlFor="name" className="sr-only">
+            Your Name
+          </label>
           <input
+            id="name"
             type="text"
             name="name"
             placeholder="Your Name"
@@ -75,7 +91,11 @@ function Contact() {
             required
           />
 
+          <label htmlFor="email" className="sr-only">
+            Your Email
+          </label>
           <input
+            id="email"
             type="email"
             name="email"
             placeholder="Your Email"
@@ -84,7 +104,11 @@ function Contact() {
             required
           />
 
+          <label htmlFor="subject" className="sr-only">
+            Subject
+          </label>
           <input
+            id="subject"
             type="text"
             name="subject"
             placeholder="Subject"
@@ -93,7 +117,11 @@ function Contact() {
             required
           />
 
+          <label htmlFor="message" className="sr-only">
+            Your Message
+          </label>
           <textarea
+            id="message"
             rows="6"
             name="message"
             placeholder="Your Message"
@@ -104,7 +132,11 @@ function Contact() {
           <button type="submit" className="btn" disabled={loading}>
             {loading ? "Sending..." : "Send Message"}
           </button>
-          {status && <p className="status">{status}</p>}
+          {status && (
+            <p className="status" aria-live="polite">
+              {status}
+            </p>
+          )}
         </form>
       </div>
     </section>
