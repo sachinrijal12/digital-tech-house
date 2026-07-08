@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: #020202;
+  background: #f7f7f4;
   text-align: center;
 }
 
@@ -14,7 +14,7 @@
 
 .not-found h1 {
   font-size: 120px;
-  color: #fafafa;
+  color: #111111;
   line-height: 1;
   margin-bottom: 15px;
 }
@@ -22,11 +22,11 @@
 .not-found h2 {
   font-size: 38px;
   margin-bottom: 20px;
-  color: #d6d6d6;
+  color: #4b5563;
 }
 
 .not-found p {
-  color: #a5a5a5;
+  color: #6b7280;
   line-height: 1.8;
   margin-bottom: 35px;
 }

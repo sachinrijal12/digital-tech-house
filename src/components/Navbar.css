@@ -4,11 +4,11 @@
   left: 0;
   width: 100%;
   padding: clamp(0.9rem, 1.8vw, 1.2rem) 0;
-  background: rgba(2, 2, 2, 0.76);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
   z-index: 1000;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
 }
 
 .nav-container {
@@ -33,7 +33,7 @@
 }
 
 .nav-links a {
-  color: #e5e5e5;
+  color: #374151;
   text-decoration: none;
   font-size: clamp(0.95rem, 1.2vw, 1.05rem);
   font-weight: 500;
@@ -45,7 +45,7 @@
 
 .nav-links a:hover,
 .active-link {
-  color: #fafafa;
+  color: #111111;
   transform: translateY(-1px);
 }
 
@@ -54,12 +54,12 @@
   display: block;
   height: 2px;
   margin-top: 5px;
-  background: linear-gradient(90deg, transparent, #fafafa, transparent);
+  background: linear-gradient(90deg, transparent, #111111, transparent);
 }
 
 .menu-icon {
   display: none;
-  color: white;
+  color: #111111;
   font-size: 1.15rem;
   cursor: pointer;
   border: none;
@@ -67,6 +67,8 @@
   width: 44px;
   height: 44px;
   border-radius: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 992px) {
@@ -89,7 +91,7 @@
     display: block;
     position: fixed;
     inset: 0;
-    background: rgba(2, 2, 2, 0.82);
+    background: rgba(255, 255, 255, 0.72);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -107,16 +109,17 @@
     right: 0;
     width: min(82vw, 320px);
     height: 100dvh;
-    padding: 5rem 1.5rem 2rem;
-    background: rgba(7, 7, 7, 0.96);
+    padding: 5rem 1rem 2rem;
+    background: rgba(255, 255, 255, 0.96);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1.25rem;
+    gap: 1rem;
     transform: translateX(100%);
     transition: transform 0.35s ease;
-    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.35);
+    box-shadow: -10px 0 40px rgba(15, 23, 42, 0.1);
+    overflow-y: auto;
   }
 
   .nav-links.active {

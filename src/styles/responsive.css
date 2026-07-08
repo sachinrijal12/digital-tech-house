@@ -80,6 +80,37 @@
    Small Mobile
 =========================== */
 
+@media (max-width: 640px) {
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    align-items: stretch;
+  }
+
+  .hero-tag {
+    margin-inline: auto;
+  }
+
+  .hero-panel,
+  .contact-form,
+  .about-card,
+  .service-card,
+  .project-card,
+  .stat-card {
+    min-width: 0;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+  }
+
+  .project-buttons a {
+    width: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .hero {
     padding: 4rem 0.75rem 2rem;
@@ -100,5 +131,15 @@
   input,
   textarea {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  section {
+    padding-inline: 0.7rem;
+  }
+
+  .hero {
+    padding-inline: 0.7rem;
   }
 }

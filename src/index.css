@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background: #020202;
-  color: #fafafa;
+  background: #f7f7f4;
+  color: #111111;
   min-height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
