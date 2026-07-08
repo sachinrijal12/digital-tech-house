@@ -1,5 +1,5 @@
 .stats {
-  background: #0b1628;
+  background: #020202;
   padding: clamp(4.5rem, 8vw, 6.5rem) clamp(1rem, 4vw, 2rem);
 }
 
@@ -10,41 +10,40 @@
 }
 
 .stat-card {
-  background: rgba(17, 24, 39, 0.75);
-  backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
-  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0;
+  text-align: left;
   padding: clamp(1.4rem, 2.5vw, 2rem);
   transition: 0.35s;
 }
 
 .stat-card:hover {
   transform: translateY(-8px);
-  border-color: #2563eb;
-  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.18);
+  border-color: #fafafa;
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.08);
 }
 
 .stat-icon {
   width: 74px;
   height: 74px;
-  margin: 0 auto 1rem;
-  border-radius: 50%;
+  margin: 0 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
-  color: white;
+  background: #fafafa;
+  color: #020202;
   font-size: 1.6rem;
 }
 
 .stat-card h2 {
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   margin-bottom: 0.4rem;
+  color: #fafafa;
 }
 
 .stat-card p {
-  color: #cbd5e1;
+  color: #d6d6d6;
   font-size: clamp(0.95rem, 1.4vw, 1.05rem);
 }
 

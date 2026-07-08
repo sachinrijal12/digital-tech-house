@@ -1,5 +1,5 @@
 .contact {
-  background: #08111f;
+  background: #020202;
   padding: clamp(4.5rem, 8vw, 6.5rem) clamp(1rem, 4vw, 2rem);
 }
 
@@ -15,10 +15,10 @@
 .contact-form textarea {
   width: 100%;
   padding: 0.95rem 1rem;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(17, 24, 39, 0.75);
-  color: white;
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fafafa;
   font-size: 1rem;
   transition: 0.3s;
   outline: none;
@@ -26,8 +26,8 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+  border-color: #fafafa;
+  box-shadow: 0 0 0 4px rgba(250, 250, 250, 0.12);
 }
 
 .contact-form textarea {
@@ -37,19 +37,20 @@
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #94a3b8;
+  color: #a5a5a5;
 }
 
 .contact-form button {
   width: fit-content;
   align-self: center;
+  border-radius: 0;
 }
 
 .status {
   text-align: center;
   margin-top: 0.6rem;
   font-weight: 600;
-  color: #3b82f6;
+  color: #fafafa;
 }
 
 @media (max-width: 768px) {

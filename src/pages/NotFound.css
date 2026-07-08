@@ -1,31 +1,32 @@
-.not-found{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-    background:#08111f;
-    text-align:center;
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #020202;
+  text-align: center;
 }
 
-.not-found-content{
-    max-width:600px;
+.not-found-content {
+  max-width: 600px;
 }
 
-.not-found h1{
-    font-size:120px;
-    color:#3b82f6;
-    line-height:1;
-    margin-bottom:15px;
+.not-found h1 {
+  font-size: 120px;
+  color: #fafafa;
+  line-height: 1;
+  margin-bottom: 15px;
 }
 
-.not-found h2{
-    font-size:38px;
-    margin-bottom:20px;
+.not-found h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #d6d6d6;
 }
 
-.not-found p{
-    color:#cbd5e1;
-    line-height:1.8;
-    margin-bottom:35px;
+.not-found p {
+  color: #a5a5a5;
+  line-height: 1.8;
+  margin-bottom: 35px;
 }

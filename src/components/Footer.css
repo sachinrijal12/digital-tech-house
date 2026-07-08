@@ -1,5 +1,5 @@
 .footer {
-  background: #050b15;
+  background: #020202;
   padding: clamp(3.5rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem) 1.8rem;
   position: relative;
 }
@@ -12,12 +12,12 @@
 }
 
 .footer-logo h2 {
-  color: #3b82f6;
+  color: #fafafa;
   margin-bottom: 1rem;
 }
 
 .footer-logo p {
-  color: #cbd5e1;
+  color: #d6d6d6;
   line-height: 1.8;
 }
 
@@ -29,17 +29,18 @@
 .footer-links h3,
 .footer-social h3 {
   margin-bottom: 1rem;
+  color: #fafafa;
 }
 
 .footer-links a {
-  color: #cbd5e1;
+  color: #d6d6d6;
   text-decoration: none;
   margin-bottom: 0.75rem;
   transition: 0.3s;
 }
 
 .footer-links a:hover {
-  color: #3b82f6;
+  color: #fafafa;
 }
 
 .icons {
@@ -51,8 +52,7 @@
 .icons a {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  background: #111827;
+  background: #111111;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,18 +62,19 @@
 }
 
 .icons a:hover {
-  background: #2563eb;
+  background: #fafafa;
+  color: #020202;
 }
 
 hr {
   border: none;
-  border-top: 1px solid #1f2937;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   margin: 1.5rem 0;
 }
 
 .copyright {
   text-align: center;
-  color: #94a3b8;
+  color: #a5a5a5;
 }
 
 .top-btn {
@@ -83,15 +84,15 @@ hr {
   width: 55px;
   height: 55px;
   border: none;
-  border-radius: 50%;
-  background: #2563eb;
-  color: white;
+  border-radius: 0;
+  background: #fafafa;
+  color: #020202;
   font-size: 20px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.08);
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
@@ -106,7 +107,7 @@ hr {
 }
 
 .top-btn:hover {
-  background: #1d4ed8;
+  background: #e8e8e8;
   transform: translateY(-5px);
 }
 

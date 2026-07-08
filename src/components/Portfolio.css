@@ -1,5 +1,5 @@
 .portfolio {
-  background: #08111f;
+  background: #020202;
   padding: clamp(4.5rem, 8vw, 6.5rem) clamp(1rem, 4vw, 2rem);
 }
 
@@ -11,17 +11,16 @@
 
 .project-card {
   overflow: hidden;
-  border-radius: 18px;
-  background: rgba(17, 24, 39, 0.75);
-  backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   transition: 0.35s;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  border-color: #2563eb;
-  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.18);
+  border-color: #fafafa;
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.08);
 }
 
 .project-card img {
@@ -32,7 +31,7 @@
 }
 
 .project-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .project-body {
@@ -42,10 +41,11 @@
 .project-body h3 {
   margin-bottom: 0.8rem;
   font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+  color: #fafafa;
 }
 
 .project-body p {
-  color: #cbd5e1;
+  color: #d6d6d6;
   line-height: 1.7;
 }
 
@@ -57,10 +57,10 @@
 }
 
 .tech-list span {
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
-  color: white;
+  background: #fafafa;
+  color: #020202;
   padding: 0.45rem 0.75rem;
-  border-radius: 999px;
+  border-radius: 0;
   font-size: 0.85rem;
 }
 
@@ -77,15 +77,16 @@
   gap: 0.6rem;
   padding: 0.8rem;
   text-decoration: none;
-  border-radius: 999px;
-  background: #1e293b;
+  border-radius: 0;
+  background: #111111;
   color: white;
   transition: 0.3s;
   min-height: 44px;
 }
 
 .project-buttons a:hover {
-  background: #2563eb;
+  background: #fafafa;
+  color: #020202;
 }
 
 @media (max-width: 992px) {
