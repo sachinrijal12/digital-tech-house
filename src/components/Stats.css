@@ -1,55 +1,52 @@
 .stats {
-  background: #f7f7f4;
-  padding: clamp(4.5rem, 8vw, 6.5rem) clamp(1rem, 4vw, 2rem);
+  background: #f3efe8;
+  padding: clamp(4.5rem, 8vw, 6rem) clamp(1rem, 4vw, 2rem);
 }
 
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 1.5rem);
+  gap: clamp(0.9rem, 1.8vw, 1.2rem);
 }
 
 .stat-card {
-  background: #ffffff;
-  border: 1px solid rgba(17, 17, 17, 0.12);
-  border-radius: 0;
+  background: #fcfbf8;
+  border: 1px solid rgba(23, 23, 23, 0.12);
+  border-radius: 2px;
   text-align: left;
-  padding: clamp(1.4rem, 2.5vw, 2rem);
+  padding: clamp(1.1rem, 2vw, 1.6rem);
   transition:
-    transform 0.35s ease,
-    border-color 0.35s ease,
-    box-shadow 0.35s ease;
-  backdrop-filter: blur(16px);
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+    border-color 0.2s ease,
+    background 0.2s ease;
+  box-shadow: none;
 }
 
 .stat-card:hover {
-  transform: translateY(-8px);
-  border-color: #111111;
-  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+  border-color: #111827;
+  background: #f7f3ea;
 }
 
 .stat-icon {
-  width: 74px;
-  height: 74px;
-  margin: 0 0 1rem;
+  width: 68px;
+  height: 68px;
+  margin: 0 0 0.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #111111 0%, #3a3a3a 100%);
+  background: #1f2937;
   color: #ffffff;
-  font-size: 1.6rem;
+  font-size: 1.45rem;
 }
 
 .stat-card h2 {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  margin-bottom: 0.4rem;
-  color: #111111;
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  margin-bottom: 0.35rem;
+  color: #171717;
 }
 
 .stat-card p {
-  color: #6b7280;
-  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  color: #5e6369;
+  font-size: clamp(0.95rem, 1.3vw, 1rem);
 }
 
 @media (max-width: 992px) {

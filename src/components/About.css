@@ -1,63 +1,60 @@
 .about {
-  background: #f7f7f4;
-  padding: clamp(4.5rem, 8vw, 6.5rem) clamp(1rem, 4vw, 2rem);
+  background: #f3efe8;
+  padding: clamp(4.5rem, 8vw, 6rem) clamp(1rem, 4vw, 2rem);
 }
 
 .about-text {
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
-  color: #374151;
+  color: #4b5563;
   line-height: 1.8;
-  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  font-size: clamp(1rem, 1.4vw, 1.05rem);
 }
 
 .about-text span {
-  color: #111111;
+  color: #171717;
   font-weight: 700;
 }
 
 .about-cards {
-  margin-top: clamp(2.5rem, 5vw, 4.5rem);
+  margin-top: clamp(2.2rem, 4vw, 3.5rem);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 1.5rem);
+  gap: clamp(1rem, 2vw, 1.4rem);
 }
 
 .about-card {
-  background: #ffffff;
-  border: 1px solid rgba(17, 17, 17, 0.12);
-  border-radius: 0;
-  padding: clamp(1.4rem, 2.5vw, 2rem);
+  background: #fcfbf8;
+  border: 1px solid rgba(23, 23, 23, 0.12);
+  border-radius: 2px;
+  padding: clamp(1.2rem, 2.2vw, 1.7rem);
   text-align: left;
   transition:
-    transform 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
-  backdrop-filter: blur(16px);
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+    border-color 0.2s ease,
+    background 0.2s ease;
+  box-shadow: none;
 }
 
 .about-card:hover {
-  transform: translateY(-8px);
-  border-color: #111111;
-  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+  border-color: #111827;
+  background: #f7f3ea;
 }
 
 .icon {
-  font-size: clamp(1.8rem, 2.8vw, 2.3rem);
-  color: #111111;
-  margin-bottom: 1rem;
+  font-size: clamp(1.7rem, 2.6vw, 2.1rem);
+  color: #171717;
+  margin-bottom: 0.9rem;
 }
 
 .about-card h3 {
-  margin-bottom: 0.8rem;
-  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
-  color: #111111;
+  margin-bottom: 0.7rem;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  color: #171717;
 }
 
 .about-card p {
-  color: #6b7280;
+  color: #5e6369;
   line-height: 1.7;
 }
 

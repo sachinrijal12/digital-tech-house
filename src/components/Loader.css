@@ -1,13 +1,7 @@
 .loader {
   position: fixed;
   inset: 0;
-  background:
-    radial-gradient(
-      circle at top left,
-      rgba(17, 17, 17, 0.04),
-      transparent 28%
-    ),
-    #f7f7f4;
+  background: #f3efe8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,11 +22,10 @@
   width: 110px;
   height: auto;
   margin: 0 auto 20px;
-  animation: float 2s ease-in-out infinite;
 }
 
 .loader-content h1 {
-  color: #111111;
+  color: #171717;
   font-size: 32px;
   font-weight: 700;
   margin: 0 0 25px;
@@ -43,8 +36,8 @@
   width: 220px;
   max-width: 90vw;
   height: 6px;
-  background: rgba(17, 17, 17, 0.1);
-  border-radius: 0;
+  background: rgba(23, 23, 23, 0.12);
+  border-radius: 2px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -52,8 +45,8 @@
 .loader-progress {
   width: 0;
   height: 100%;
-  background: linear-gradient(90deg, #111111 0%, #3a3a3a 100%);
-  animation: loading 2s linear forwards;
+  background: #1f2937;
+  animation: loading 1.6s linear forwards;
 }
 
 @keyframes loading {
@@ -62,20 +55,6 @@
   }
   to {
     width: 100%;
-  }
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
   }
 }
 
