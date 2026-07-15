@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 import Logo from "./Logo";
 import useActiveSection from "../hooks/useActiveSection";
@@ -40,7 +39,7 @@ function Navbar() {
           aria-expanded={menuOpen}
           aria-controls="mobile-nav-links"
         >
-          {menuOpen ? <FaTimes /> : <FaBars />}
+          {menuOpen ? "Close" : "Menu"}
         </button>
 
         <div

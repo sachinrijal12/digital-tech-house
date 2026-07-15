@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Business Portfolio",
     description: "Corporate company website with premium UI.",
-    tech: ["React", "Framer Motion"],
+    tech: ["React", "CSS Grid"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900",
     demo: "#",
   },

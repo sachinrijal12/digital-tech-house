@@ -3,6 +3,14 @@
   top: 0;
   left: 0;
   height: 4px;
+  background: var(--accent);
+  z-index: 9999;
+}
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
   background: #111111;
   z-index: 9999;
   transition: width 0.1s linear;

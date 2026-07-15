@@ -1,11 +1,6 @@
 import "./Footer.css";
 import { useEffect, useState } from "react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaArrowUp,
-} from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 import Logo from "./Logo";
 
 function Footer() {
@@ -59,13 +54,13 @@ function Footer() {
         <div className="footer-social">
           <h3>Follow Us</h3>
 
-          <div className="icons">
+          <div className="footer-links footer-social-links">
             <a
               href="https://www.facebook.com/profile.php?id=100020779023331"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebookF />
+              Facebook
             </a>
 
             <a
@@ -73,7 +68,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram />
+              Instagram
             </a>
 
             <a
@@ -81,7 +76,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedinIn />
+              LinkedIn
             </a>
           </div>
         </div>
@@ -100,7 +95,7 @@ function Footer() {
         onClick={scrollTop}
         aria-label="Back to Top"
       >
-        <FaArrowUp />
+        <FaArrowUp aria-hidden="true" focusable="false" />
       </button>
     </footer>
   );

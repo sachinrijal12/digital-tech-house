@@ -1,7 +1,5 @@
 import "./Portfolio.css";
 import projects from "../data/projects";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 function Portfolio() {
   return (
@@ -13,14 +11,7 @@ function Portfolio() {
 
         <div className="portfolio-grid">
           {projects.map((project, index) => (
-            <motion.div
-              className="project-card"
-              key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.15 }}
-              viewport={{ once: true }}
-            >
+            <div className="project-card" key={index}>
               <img src={project.image} alt={project.title} />
 
               <div className="project-body">
@@ -36,12 +27,11 @@ function Portfolio() {
 
                 <div className="project-buttons">
                   <a href={project.demo} target="_blank" rel="noreferrer">
-                    <FaExternalLinkAlt />
                     Live Demo
                   </a>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

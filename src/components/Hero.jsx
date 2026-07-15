@@ -1,17 +1,11 @@
 import "./Hero.css";
-import { motion } from "framer-motion";
 
 function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-bg" />
 
-      <motion.div
-        className="hero-content"
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
+      <div className="hero-content">
         <div className="hero-grid">
           <div className="hero-copy">
             <span className="hero-tag">Welcome to Digital Tech House</span>
@@ -73,7 +67,7 @@ function Hero() {
             <h3>Client Focused</h3>
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

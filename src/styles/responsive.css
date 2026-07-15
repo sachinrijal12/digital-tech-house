@@ -1,145 +1,16 @@
-/* ===========================
-   Large Laptop
-=========================== */
-
 @media (max-width: 1200px) {
   .container {
-    width: 92%;
+    width: min(100%, 1140px);
   }
 }
-
-/* ===========================
-   Tablet
-=========================== */
-
-@media (max-width: 992px) {
-  section {
-    padding: 3.5rem 1rem;
-  }
-
-  .hero h1 {
-    font-size: clamp(2.4rem, 5vw, 3.6rem);
-  }
-
-  .hero-stats {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .about-cards,
-  .services-grid,
-  .portfolio-grid,
-  .stats-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* ===========================
-   Mobile
-=========================== */
-
-@media (max-width: 768px) {
-  section {
-    padding: 3rem 0.9rem;
-  }
-
-  .hero {
-    padding: 5rem 0.9rem 2.5rem;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .footer-container,
-  .about-cards,
-  .services-grid,
-  .portfolio-grid,
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .logo-text h2 {
-    font-size: 1rem;
-  }
-}
-
-/* ===========================
-   Small Mobile
-=========================== */
 
 @media (max-width: 640px) {
-  .hero-copy {
-    text-align: center;
-  }
-
-  .hero-buttons {
-    align-items: stretch;
-  }
-
-  .hero-tag {
-    margin-inline: auto;
-  }
-
-  .hero-panel,
-  .contact-form,
-  .about-card,
-  .service-card,
-  .project-card,
-  .stat-card {
-    min-width: 0;
-  }
-
-  .project-buttons {
-    flex-direction: column;
-  }
-
-  .project-buttons a {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    padding: 4rem 0.75rem 2rem;
-  }
-
-  .hero h1 {
-    font-size: 2.1rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .logo-text h2 {
-    font-size: 0.95rem;
-  }
-
-  input,
-  textarea {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 360px) {
   section {
-    padding-inline: 0.7rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
 
-  .hero {
-    padding-inline: 0.7rem;
+  .container {
+    padding-inline: 0.8rem;
   }
 }

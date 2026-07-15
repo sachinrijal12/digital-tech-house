@@ -10,8 +10,9 @@ function WhatsAppButton() {
       className="whatsapp-btn"
       target="_blank"
       rel="noreferrer"
+      aria-label="Open WhatsApp chat"
     >
-      <FaWhatsapp />
+      <FaWhatsapp aria-hidden="true" focusable="false" />
     </a>
   );
 }

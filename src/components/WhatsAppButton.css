@@ -2,21 +2,24 @@
   position: fixed;
   bottom: 25px;
   left: 25px;
-  width: 56px;
-  height: 56px;
-  border-radius: 2px;
-  background: #1f2937;
+  width: 52px;
+  height: 52px;
+  padding: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--accent);
   color: #ffffff;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
   z-index: 1000;
-  box-shadow: none;
-  transition: background 0.2s ease;
+  box-shadow: var(--shadow-md);
 }
 
 .whatsapp-btn:hover {
-  background: #111827;
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
 }

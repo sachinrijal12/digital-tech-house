@@ -30,7 +30,7 @@ function Contact() {
 
     if (!isConfigured) {
       setStatus(
-        "⚠️ The contact form is temporarily unavailable. Please try again later.",
+        "The contact form is temporarily unavailable. Please try again later.",
       );
       return;
     }
@@ -51,7 +51,7 @@ function Contact() {
         publicKey,
       )
       .then(() => {
-        setStatus("✅ Message sent successfully!");
+        setStatus("Message sent successfully.");
 
         setForm({
           name: "",
@@ -61,7 +61,7 @@ function Contact() {
         });
       })
       .catch(() => {
-        setStatus("❌ Failed to send message. Please try again.");
+        setStatus("Failed to send message. Please try again.");
       })
       .finally(() => {
         setLoading(false);
